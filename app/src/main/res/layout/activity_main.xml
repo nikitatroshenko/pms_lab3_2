@@ -10,4 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="by.bsu.fpm.atroschens.lab32.MainActivity">
 
+    <EditText
+        android:id="@+id/edit_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_url"
+        android:inputType="textUri"/>
+
+    <ImageView
+        android:id="@+id/image_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_url"
+        android:layout_above="@+id/go_button"
+        android:src="@drawable/abbey_road"/>
+
+    <Button
+        android:id="@id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go"
+        android:onClick="onGoClick"/>
+
 </RelativeLayout>
